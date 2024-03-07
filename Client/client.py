@@ -3,7 +3,7 @@ import json
 import asyncio
 import websockets
 
-INTERVAL = .1
+INTERVAL = .5
 
 
 class Client(object):
