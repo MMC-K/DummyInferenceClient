@@ -1,9 +1,9 @@
 import time
-import pickle
+import json
 import asyncio
 import websockets
 
-INTERVAL = .5
+INTERVAL = .1
 
 
 class Client(object):
@@ -16,8 +16,11 @@ class Client(object):
                 async with websockets.connect(self.url) as websocket:
                     time.sleep(INTERVAL)
                     await websocket.send(code)
-                    here = await websocket.recv()
-                    print(pickle.loads(here).ketiair_data)
+                    data = await websocket.recv()
+                    if data == 'END':
+                        exit()
+                    print(json.loads(data))
+                    print('')
             except Exception as e:
                 print(e)
                 time.sleep(1)
