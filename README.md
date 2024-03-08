@@ -26,7 +26,7 @@ e.g. INTERVAL = 3.2
 ## 출력 데이터 예시
 ```bash
 {
-    "affective_state": "neutral",
+    "affective_state": "중립",
     "channel": "front",
     "device_id": "device01",
     "expressions": [
@@ -37,7 +37,7 @@ e.g. INTERVAL = 3.2
                 "gaze": ""
             },
             "paraverbal": "",
-            "verbal": "너무"
+            "verbal": "퇴근하고"
         },
         {
             "nonverbal": {
@@ -46,11 +46,38 @@ e.g. INTERVAL = 3.2
                 "gaze": ""
             },
             "paraverbal": "",
-            "verbal": "더러워가지고."
+            "verbal": "계속"
+        },
+        {
+            "nonverbal": {
+                "additional": "",
+                "function": "",
+                "gaze": ""
+            },
+            "paraverbal": "",
+            "verbal": "마라톤을"
+        },
+        {
+            "nonverbal": {
+                "additional": "",
+                "function": "",
+                "gaze": ""
+            },
+            "paraverbal": "",
+            "verbal": "하고"
+        },
+        {
+            "nonverbal": {
+                "additional": "",
+                "function": "호응적",
+                "gaze": ""
+            },
+            "paraverbal": "",
+            "verbal": "있구요"
         }
     ],
-    "strategy": "Elaboration_subjective",
+    "strategy": "주관적정보 구체화",
     "user_id": 1,
-    "utterance": " 너무 더러워가지고."
+    "utterance": " 퇴근하고 계속 마라톤을 하고 있구요"
 }
 ```
