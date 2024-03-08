@@ -19,7 +19,7 @@ class Client(object):
                     data = await websocket.recv()
                     if data == 'END':
                         exit()
-                    print(json.loads(data))
+                    print(data)
                     print('')
             except Exception as e:
                 print(e)
