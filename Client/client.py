@@ -33,5 +33,4 @@ if __name__ == '__main__':
     if code not in ['start', 'continue']:
         exit('Invalid play code')
 
-    asyncio.get_event_loop().run_until_complete(
-        asyncio.gather(client.recv_data(code)))
+    asyncio.get_event_loop().run_until_complete(client.recv_data(code))
