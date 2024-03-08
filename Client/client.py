@@ -1,5 +1,4 @@
 import time
-import json
 import asyncio
 import websockets
 
@@ -34,3 +33,4 @@ if __name__ == '__main__':
         exit('Invalid play code')
 
     asyncio.get_event_loop().run_until_complete(client.recv_data(code))
+s
