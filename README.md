@@ -10,11 +10,11 @@ pip install -r requirements.txt
 e.g. python client.py
 ```
 
-2. play code를 입력하는 문구가 출력된다면 start 혹은 resume를 선택하여 서버로부터 데이터를 받아오기
+2. play code를 입력하는 문구가 출력된다면 start 혹은 continue 선택하여 서버로부터 데이터를 받아오기
 ```bash
 # start: 처음부터 다시 받아오기
-# resume: 마지막 종료 지점부터 이어서 받아오기
-e.g. play code: [start | resume]: start
+# continue: 마지막 종료 지점부터 이어서 받아오기
+e.g. play code: [start | continue]: start
 ```
 
 3. 서버로부터 데이터를 받아오는 시간을 조절하는 방법
