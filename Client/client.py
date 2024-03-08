@@ -29,8 +29,8 @@ class Client(object):
 if __name__ == '__main__':
     client = Client()
 
-    code = input('play code: [start | resume]: ')
-    if code not in ['start', 'resume']:
+    code = input('play code: [start | continue]: ')
+    if code not in ['start', 'continue']:
         exit('Invalid play code')
 
     asyncio.get_event_loop().run_until_complete(
